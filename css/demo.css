@@ -1,0 +1,26 @@
+body {
+    margin:0;   
+}
+header {
+    font: 2em Helvetica, Arial, sans-serif;
+    padding:15px;
+    text-align:center;
+    height:120px;
+    background-color:#848484;
+    color:white;
+    box-shadow: 0px 2px 5px 0px rgb(141, 141, 141);
+}
+#content {
+    margin:auto;
+    width: 70%;
+    left:0;
+    right:0;
+    padding-top:20px;
+}
+header a:visited, header a:link {
+    color:rgb(11, 250, 241);
+    text-decoration:none;
+}
+header a:active {
+    color:rgb(51, 198, 192);   
+}

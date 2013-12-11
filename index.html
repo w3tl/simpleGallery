@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Gallery</title>
+        <link rel="stylesheet" href="css/demo.css">
+        <link rel="stylesheet" href="css/simpleGallery.css">
+        <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+        <script type="text/javascript" src="js/simpleGallery.js"></script>
+        
+    </head>
+    <body>
+        <header>
+            <a href="#">simpleGallery</a> - Simple JQuery library for image gallery
+            <a href="https://github.com/w3tl/simpleGallery">
+                <img style="position: absolute; top: 0; right: 0; border: 0;" src="img/forkme.png" alt="Fork me on GitHub">
+            </a>
+        </header>
+        <section id="content">
+        <section id="gallery">
+            <img src="img/1.jpg" data-full="img/1.jpg" alt="img1"/>
+            <img src="img/2.jpg" data-full="img/2.jpg" alt="img2"/>
+            <img src="img/3.jpg" data-full="img/3.jpg" alt="img3"/>
+            <img src="img/4.jpg" data-full="img/4.jpg" alt="img4"/>
+            <img src="img/5.jpg" data-full="img/5.jpg" alt="img1"/>
+            <img src="img/6.jpg" data-full="img/6.jpg" alt="img2"/>
+            <img src="img/7.jpg" data-full="img/7.jpg" alt="img3"/>
+            <img src="img/8.jpg" data-full="img/8.jpg" alt="img4"/>
+        </section>
+        </section>
+        <script>
+            $('#gallery').gallery();
+        </script>
+    </body>
+</html>
