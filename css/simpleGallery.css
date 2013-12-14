@@ -74,3 +74,118 @@ background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpI
 	left: 0;
 	right: 0;
 }
+
+/* loading */
+#bubbl {
+    display:none;
+    text-align: center;
+    margin:auto;
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width:45px;
+    height:28px;
+}
+
+#bubbl span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 6px;
+    height: 6px;
+    margin: 14px auto;
+    background: #FFFFFF;
+    -moz-border-radius: 29px;
+    -moz-animation: bubbling 0.9s infinite alternate;
+    -webkit-border-radius: 29px;
+    -webkit-animation: bubbling 0.9s infinite alternate;
+    -o-border-radius: 29px;
+    -o-animation: bubbling 0.9s infinite alternate;
+    -ms-border-radius: 29px;
+    -ms-animation: bubbling 0.9s infinite alternate;
+}
+
+#bubbl1 {
+    -moz-animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+    -o-animation-delay: 0s;
+    -ms-animation-delay: 0s;
+}
+
+#bubbl2 {
+    -moz-animation-delay: 0.27s;
+    -webkit-animation-delay: 0.27s;
+    -o-animation-delay: 0.27s;
+    -ms-animation-delay: 0.27s;
+}
+
+#bubbl3 {
+    -moz-animation-delay: 0.54s;
+    -webkit-animation-delay: 0.54s;
+    -o-animation-delay: 0.54s;
+    -ms-animation-delay: 0.54s;
+}
+
+/* loading animation */
+@-moz-keyframes bubbling {
+    0% {
+        width: 6px;
+        height: 6px;
+        background-color:#FFFFFF;
+        -moz-transform: translateY(0);
+    }
+    100% {
+        width: 14px;
+        height: 14px;
+        background-color:#FFFFFF;
+        -moz-transform: translateY(-12px);
+    }
+}
+
+@-webkit-keyframes bubbling {
+    0% {
+        width: 6px;
+        height: 6px;
+        background-color:#FFFFFF;
+        -webkit-transform: translateY(0);
+    }
+    100% {
+        width: 14px;
+        height: 14px;
+        background-color:#FFFFFF;
+        -webkit-transform: translateY(-12px);
+    }
+}
+
+@-o-keyframes bubbling {
+    0% {
+        width: 6px;
+        height: 6px;
+        background-color:#FFFFFF;
+        -o-transform: translateY(0);
+    }
+    
+    100% {
+        width: 14px;
+        height: 14px;
+        background-color:#FFFFFF;
+        -o-transform: translateY(-12px);
+    }
+}
+
+@-ms-keyframes bubbling {
+    0% {
+        width: 6px;
+        height: 6px;
+        background-color:#FFFFFF;
+        -ms-transform: translateY(0);
+    }
+    
+    100% {
+        width: 14px;
+        height: 14px;
+        background-color:#FFFFFF;
+        -ms-transform: translateY(-12px);
+    }
+}
