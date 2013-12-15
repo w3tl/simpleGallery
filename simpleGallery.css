@@ -65,6 +65,7 @@ background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpI
 }
 
 #view img {
+    cursor: pointer;
 	position: absolute;
 	margin: auto;
 	max-width: 76%;

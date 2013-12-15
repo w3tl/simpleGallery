@@ -47,7 +47,8 @@
             });
         
             $( "#close", view ).click(function () { 
-                view.hide(); 
+                view.hide();
+                view_image.attr('src', '');
             });
             $( "#prev", view ).click(function () {
                 curr_image = prev();
