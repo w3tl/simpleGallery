@@ -5,25 +5,28 @@
  * Copyright 2013 Vitaly Dostovalov (dostovalovvs@gmail.com)
  * Released under the MIT license.
  *
- * Date: 2013.12.13
+ * Date: 2013.12.15
  */
 (function ($) {
     $.fn.gallery = function () {
         return this.each(function() {
             var gallery = $(this),
-                view = $("#view", gallery),
-                view_image = view.children("img"),
                 loading = $("#bubbl", view),
                 curr_image;
+            
             gallery.prepend(
                 '<div id="view"><span id="prev" class="control"></span><span id="close" class="control"></span><span id="next" class="control"></span><img><div id="bubbl"><span id="bubbl1"></span><span id="bubbl2"></span><span id="bubbl3"></span></div></div>'
             );
+
+            var view = $("#view", gallery),
+                view_image = view.children("img");
+
             function next() {
                 return curr_image.next().length ? curr_image.next() : curr_image.siblings("img").first();
-            };
+            }
             function prev() {
                 return curr_image.prev("img").length ? curr_image.prev() : curr_image.nextAll().last();
-            };
+            }
         
             function viewImage(image) {
                 curr_image = image.data("full") ? image : next();
@@ -33,12 +36,12 @@
                     loading.hide();
                     view_image.show();
                 });
-            };
+            }
         
             gallery.click(function(e) {
                 var clicked = $(e.target)[0].tagName === "IMG" ? $(e.target) : null ;
                 if ( clicked ) {
-                    viewImage(clicked);  
+                    viewImage(clicked); 
                     view.show();
                 }
             });
