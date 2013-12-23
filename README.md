@@ -1,4 +1,4 @@
-simpleGallery is a Responsive jQuery, HTML5 &amp; CSS3 image gallery
+simpleGallery is a Responsive jQuery &amp; CSS3 image gallery
 
 #### [Click here to see the demo](http://w3tl.github.io/simpleGallery/)
 
@@ -17,15 +17,15 @@ simpleGallery is a Responsive jQuery, HTML5 &amp; CSS3 image gallery
 	
 	```html
 	<!-- simpleGallery CSS file -->
-    <link rel="stylesheet" href="path/to/gallery.css">
+    <link rel="stylesheet" href="path/to/simpleGallery.css">
 	<!-- simpleGallery js file -->
-	<script type="text/javascript" src="path/to/gallery.js"></script>
+	<script type="text/javascript" src="path/to/jquery.simpleGallery.js"></script>
 	```
 
 4. Insert the following code after the ```<body>``` tag:
 
 	```html
-	<section id="gallery">
+	<section class="gallery">
             <img src="img/1.jpg" data-full="img/1.jpg" alt="img1"/>
             <img src="img/2.jpg" data-full="img/2.jpg" alt="img2"/>
             <img src="img/3.jpg" data-full="img/3.jpg" alt="img3"/>
@@ -37,7 +37,7 @@ simpleGallery is a Responsive jQuery, HTML5 &amp; CSS3 image gallery
 
     ```javascript
     $(document).ready(function(){
-        $('#gallery').gallery();
+        $('.gallery').gallery();
     });
     ```
 
